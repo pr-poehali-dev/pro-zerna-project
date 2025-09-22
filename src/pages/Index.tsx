@@ -76,7 +76,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-forest-100/80 to-sage-100/80"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-in">
+            <div className="animate-fade-in-left">
               <h1 className="font-montserrat font-bold text-5xl lg:text-6xl text-forest-800 mb-6">
                 Правильное питание от
                 <span className="text-sage-600 block">про ЗЁРНА</span>
@@ -88,7 +88,7 @@ const Index = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   size="lg" 
-                  className="bg-forest-600 hover:bg-forest-700 text-white font-medium px-8 py-4"
+                  className="bg-forest-600 hover:bg-forest-700 text-white font-medium px-8 py-4 transform hover:scale-105 transition-all duration-200"
                   onClick={() => document.getElementById('rations')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   <Icon name="Leaf" size={20} className="mr-2" />
@@ -97,18 +97,18 @@ const Index = () => {
                 <Button 
                   size="lg" 
                   variant="outline" 
-                  className="border-forest-300 text-forest-700 hover:bg-forest-50 px-8 py-4"
+                  className="border-forest-300 text-forest-700 hover:bg-forest-50 px-8 py-4 transform hover:scale-105 transition-all duration-200"
                 >
                   <Icon name="Play" size={20} className="mr-2" />
                   Узнать больше
                 </Button>
               </div>
             </div>
-            <div className="animate-scale-in">
+            <div className="animate-fade-in-right">
               <img 
                 src="/img/6fcbcc79-c413-4ac5-916e-662f628e00b0.jpg" 
                 alt="Здоровое питание от про зерна"
-                className="w-full h-[400px] object-cover rounded-2xl shadow-2xl"
+                className="w-full h-[400px] object-cover rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
               />
             </div>
           </div>
@@ -118,7 +118,7 @@ const Index = () => {
       {/* Rations Section */}
       <section id="rations" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="font-montserrat font-bold text-4xl text-forest-800 mb-4">
               Наши рационы
             </h2>
@@ -132,8 +132,8 @@ const Index = () => {
             {rations.map((ration, index) => (
               <Card 
                 key={ration.id} 
-                className={`relative overflow-hidden border-2 hover:shadow-xl transition-all duration-300 animate-fade-in bg-gradient-to-br from-${ration.color}-50 to-white group cursor-pointer`}
-                style={{ animationDelay: `${index * 100}ms` }}
+                className={`relative overflow-hidden border-2 hover:shadow-xl transition-all duration-300 animate-fade-in-up bg-gradient-to-br from-${ration.color}-50 to-white group cursor-pointer transform hover:scale-105 hover:-translate-y-2`}
+                style={{ animationDelay: `${index * 200}ms` }}
               >
                 <CardHeader className="pb-4">
                   <div className="flex items-center justify-between mb-2">
@@ -211,12 +211,12 @@ const Index = () => {
       {/* Benefits Section */}
       <section className="py-20 bg-gradient-to-r from-sage-100 to-earth-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-montserrat font-bold text-4xl text-center text-forest-800 mb-16">
+          <h2 className="font-montserrat font-bold text-4xl text-center text-forest-800 mb-16 animate-fade-in-up">
             Почему выбирают нас
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center animate-fade-in">
-              <div className="w-16 h-16 bg-forest-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center animate-fade-in-up" style={{ animationDelay: '200ms' }}>
+              <div className="w-16 h-16 bg-forest-600 rounded-full flex items-center justify-center mx-auto mb-4 animate-bounce-gentle">
                 <Icon name="Leaf" className="text-white" size={32} />
               </div>
               <h3 className="font-montserrat font-semibold text-xl text-forest-800 mb-2">
@@ -226,8 +226,8 @@ const Index = () => {
                 Только свежие, качественные ингредиенты без искусственных добавок
               </p>
             </div>
-            <div className="text-center animate-fade-in" style={{ animationDelay: '100ms' }}>
-              <div className="w-16 h-16 bg-sage-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center animate-fade-in-up" style={{ animationDelay: '400ms' }}>
+              <div className="w-16 h-16 bg-sage-600 rounded-full flex items-center justify-center mx-auto mb-4 animate-bounce-gentle" style={{ animationDelay: '0.5s' }}>
                 <Icon name="Clock" className="text-white" size={32} />
               </div>
               <h3 className="font-montserrat font-semibold text-xl text-forest-800 mb-2">
@@ -237,8 +237,8 @@ const Index = () => {
                 Свежие блюда каждый день прямо к вашему порогу
               </p>
             </div>
-            <div className="text-center animate-fade-in" style={{ animationDelay: '200ms' }}>
-              <div className="w-16 h-16 bg-earth-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center animate-fade-in-up" style={{ animationDelay: '600ms' }}>
+              <div className="w-16 h-16 bg-earth-600 rounded-full flex items-center justify-center mx-auto mb-4 animate-bounce-gentle" style={{ animationDelay: '1s' }}>
                 <Icon name="Heart" className="text-white" size={32} />
               </div>
               <h3 className="font-montserrat font-semibold text-xl text-forest-800 mb-2">
