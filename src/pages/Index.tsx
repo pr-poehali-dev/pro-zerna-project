@@ -47,8 +47,12 @@ const Index = () => {
       <nav className="bg-white/90 backdrop-blur-sm border-b border-sage-200 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-2">
-              <Icon name="Coffee" className="text-forest-600" size={24} />
+            <div className="flex items-center space-x-3">
+              <img 
+                src="/img/2f99170d-72a0-43ea-85f7-5ce59b94ad82.jpg" 
+                alt="про зерна логотип"
+                className="w-10 h-10 rounded-full object-cover"
+              />
               <span className="font-montserrat font-bold text-xl text-forest-800">про зерна</span>
             </div>
             <div className="hidden md:flex space-x-8">
@@ -253,8 +257,12 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <Icon name="Coffee" size={24} />
+              <div className="flex items-center space-x-3 mb-4">
+                <img 
+                  src="/img/2f99170d-72a0-43ea-85f7-5ce59b94ad82.jpg" 
+                  alt="про зерна логотип"
+                  className="w-8 h-8 rounded-full object-cover"
+                />
                 <span className="font-montserrat font-bold text-xl">про зерна</span>
               </div>
               <p className="text-forest-200">
