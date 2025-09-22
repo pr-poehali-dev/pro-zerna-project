@@ -49,11 +49,11 @@ const Index = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
               <img 
-                src="/img/2f99170d-72a0-43ea-85f7-5ce59b94ad82.jpg" 
-                alt="про зерна логотип"
-                className="w-10 h-10 rounded-full object-cover"
+                src="https://cdn.poehali.dev/files/53bb043f-212d-44cb-a75b-873d5c50d281.png" 
+                alt="про ЗЁРНА логотип"
+                className="w-12 h-12 object-contain"
               />
-              <span className="font-montserrat font-bold text-xl text-forest-800">про зерна</span>
+              <span className="font-montserrat font-bold text-xl text-forest-800">про ЗЁРНА</span>
             </div>
             <div className="hidden md:flex space-x-8">
               <a href="#home" className="text-forest-700 hover:text-forest-800 transition-colors">Главная</a>
@@ -79,7 +79,7 @@ const Index = () => {
             <div className="animate-fade-in">
               <h1 className="font-montserrat font-bold text-5xl lg:text-6xl text-forest-800 mb-6">
                 Правильное питание от
-                <span className="text-sage-600 block">про зерна</span>
+                <span className="text-sage-600 block">про ЗЁРНА</span>
               </h1>
               <p className="text-xl text-forest-600 mb-8 leading-relaxed">
                 Персональные рационы здорового питания с доставкой. 
@@ -259,11 +259,11 @@ const Index = () => {
             <div>
               <div className="flex items-center space-x-3 mb-4">
                 <img 
-                  src="/img/2f99170d-72a0-43ea-85f7-5ce59b94ad82.jpg" 
-                  alt="про зерна логотип"
-                  className="w-8 h-8 rounded-full object-cover"
+                  src="https://cdn.poehali.dev/files/53bb043f-212d-44cb-a75b-873d5c50d281.png" 
+                  alt="про ЗЁРНА логотип"
+                  className="w-10 h-10 object-contain"
                 />
-                <span className="font-montserrat font-bold text-xl">про зерна</span>
+                <span className="font-montserrat font-bold text-xl">про ЗЁРНА</span>
               </div>
               <p className="text-forest-200">
                 Правильное питание с заботой о вашем здоровье и удовольствии от каждого приема пищи.
